@@ -1,14 +1,41 @@
 package example.crudjavafx;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
-public class HelloController {
-    @FXML
-    private Label welcomeText;
+public class Controller {
 
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    private TextField apellidoIngreso;
+
+    @FXML
+    private TextField codigoIngreso;
+
+    @FXML
+    private TextField edadIngreso;
+
+    @FXML
+    private TextField nombreIngreso;
+
+    @FXML
+    void actualizarBoton(ActionEvent event) {
+
     }
+
+    @FXML
+    void buscarBoton(ActionEvent event) {
+
+    }
+
+    @FXML
+    void crearBoton(ActionEvent event) {
+
+    }
+
+    @FXML
+    void eliminarBoton(ActionEvent event) {
+
+    }
+
 }
