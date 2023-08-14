@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="70e00997-02c7-41af-9943-4aa4cef16fd8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/example/crudjavafx/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/crudjavafx/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/crudjavafx/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/crudjavafx/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +40,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/USUARIO/Desktop/TERCER SEMESTRE/POO/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33.jar",
+    "last_opened_file_path": "C:/Users/Erick/Desktop/trabajos U/Tercer Semestre/Programacion Orientada a Objetos/logindatabasesgg",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",

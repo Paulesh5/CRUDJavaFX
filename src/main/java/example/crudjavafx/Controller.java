@@ -5,15 +5,13 @@ package example.crudjavafx;
         import javafx.scene.control.Alert;
         import javafx.scene.control.TextField;
 
-        import java.sql.Connection;
-        import java.sql.DriverManager;
-        import java.sql.PreparedStatement;
-        import java.sql.SQLException;
+        import java.sql.*;
 
 public class Controller {
     static final String DB_URL = "jdbc:mysql://localhost/crud";
     static final String USER = "root";
-    static final String PASS = "gilmar2003";
+    static final String PASS = "pc2rcee"; //CAMBIAR LA CONTRA DEPENDIENDO DE LA PC
+    private boolean data = false;
 
     @FXML
     private TextField apellidoIngreso;
@@ -66,12 +64,51 @@ public class Controller {
 
     @FXML
     void actualizarBoton(ActionEvent event) {
+        try{
+            Connection conn = DriverManager.getConnection(DB_URL,USER,PASS);
+            if(!nombreIngreso.getText().equals("") && !apellidoIngreso.getText().equals("") && !edadIngreso.getText().equals("")){
+                PreparedStatement sts = conn.prepareStatement("Update datos set nombre= ?, apellido = ?, edad = ? where codigo = ?");
+                sts.setString(1, nombreIngreso.getText());
+                sts.setString(2,apellidoIngreso.getText());
+                sts.setInt(3,Integer.parseInt(edadIngreso.getText()));
+                sts.setInt(4,Integer.parseInt(codigoIngreso.getText()));
+                sts.executeUpdate();
+                showAlert("Registro actualizado correctamente", Alert.AlertType.INFORMATION);
+            }
+            else{
+                showAlert("Error es necesario buscar el registro primero", Alert.AlertType.ERROR);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            showAlert("Error al actualizar registro", Alert.AlertType.ERROR);
+        }
 
     }
 
     @FXML
     void buscarBoton(ActionEvent event) {
-
+        try {
+            Connection conn = DriverManager.getConnection(DB_URL,USER,PASS);
+            Statement sts = conn.createStatement();
+            ResultSet rs =sts.executeQuery("SELECT * FROM datos");
+            while(rs.next()) {
+                if (codigoIngreso.getText().equals(rs.getString("codigo"))) {
+                    nombreIngreso.setText(rs.getString("nombre"));
+                    apellidoIngreso.setText(rs.getString("apellido"));
+                    edadIngreso.setText(rs.getString("edad"));
+                    data = false;
+                    break;
+                }
+                else {
+                    data = true;
+                }
+            }
+            if(data == true ) {
+                showAlert("Error Registro NO encontrado", Alert.AlertType.ERROR);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
