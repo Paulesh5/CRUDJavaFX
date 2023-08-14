@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70e00997-02c7-41af-9943-4aa4cef16fd8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/example/crudjavafx/crud-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/example/crudjavafx/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/crudjavafx/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/example/crudjavafx/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/crudjavafx/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/example/crudjavafx/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +28,7 @@
     </option>
   </component>
   <component name="MavenRunner">
-    <option name="vmOptions" value="--module-path &quot;\path\to\javafx-sdk-20\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+    <option name="vmOptions" value="--module-path &quot;C:\Users\USUARIO\Desktop\TERCER SEMESTRE\POO\javafx-sdk-20.0.2\lib&quot; --add-modules javafx.controls,javafx.fxml" />
   </component>
   <component name="ProjectId" id="2TuaUAUekMPoKdh98yKWxUfLTpW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -45,14 +43,14 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "P:/Librerias Java/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33.jar",
+    "last_opened_file_path": "C:/Users/USUARIO/Desktop/TERCER SEMESTRE/POO/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15527344",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settings.project.maven.runner",
     "vue.rearranger.settings.migration": "true"
   }
@@ -66,10 +64,17 @@
       <option name="presentableId" value="Default" />
       <updated>1691895434348</updated>
       <workItem from="1691895435419" duration="2507000" />
+      <workItem from="1691900409916" duration="2671000" />
+      <workItem from="1691982141798" duration="440000" />
+      <workItem from="1691982604024" duration="3441000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
